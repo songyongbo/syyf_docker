@@ -1,2 +1,1 @@
-# syyf_docker
-syyf docker repostory
+docker build -t centos7-go:v1.0 .
