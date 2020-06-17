@@ -4,9 +4,9 @@ echo 'begin run ...=========================='
 chmod +x /go/micro
 chmod +x /go/account-srv
 chmod +x /go/console-api
-/go/micro gateway --handler=api --namespace=myj.rmsplus.api
-/go/account-srv
-/go/console-api
+/go/micro gateway --handler=api --namespace=myj.rmsplus.api &
+/go/account-srv &
+/go/console-api &
 
 while :
 do
