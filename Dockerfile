@@ -1,8 +1,7 @@
 FROM centos:7
 MAINTAINER songyongbo <songyongbo@syyfbooks.com>
 # RUN yum install -y vim
-RUN mkdir -p /go
-RUN mkdir -p /rungo
+RUN mkdir /go /rungo
 WORKDIR /rungo
 #COPY micro /go
 COPY start.sh /rungo
